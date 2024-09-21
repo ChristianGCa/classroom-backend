@@ -4,7 +4,7 @@
 `sudo apt install nodejs npm`
 
 2. Criar uma pasta para o projeto:
-`mkdir projeto` `cd projeto`
+`mkdir classroom-backend` `cd classroom-backend`
 
 3. Inicializar o projeto respondendo tudo com sim:
 `npm init -y`
