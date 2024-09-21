@@ -29,9 +29,7 @@ app.get('/turmas', async (req, res) => {
     if (req.query) {
         turmas = await prisma.turmas.findMany({
             where: {
-                title: req.body.title,
-                subtitle: req.body.subtitle,
-                teacher: req.body.teacher
+                id: req.query.id
             }
         })
 
@@ -48,12 +46,14 @@ app.put('/turmas/:id', async (req, res) => {
             id: req.params.id
         },
         data: {
-            email: req.body.email,
-            name: req.body.name,
-            age: req.body.age
+            title: req.body.title,
+            subtitle: req.body.subtitle,
+            teacher: req.body.teacher,
+            pfp: req.body.pfp,
+            bg: req.body.bg
         }
     })
-    res.status(201).json(req.body)
+    res.status(200).json(req.body)
 })
 
 // Rota de delecão
