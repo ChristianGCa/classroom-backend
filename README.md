@@ -37,7 +37,9 @@ Execute para importar o cliente Prisma:
 
 ## Rodar o banco de dados
 Executar o servidor: `node server.js`
+
 Interface para o banco de dados: `npx prisma studio`
+
 URL: `http://localhost:3000/turmas`
 
 ## Exemplo de json para POST
