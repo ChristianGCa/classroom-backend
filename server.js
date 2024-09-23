@@ -1,10 +1,12 @@
 import express from 'express'
 import { PrismaClient } from '@prisma/client'
+import cors from 'cors'
 
 const prisma = new PrismaClient()
 
 const app = express() // Iniciando o express
 app.use(express.json()) // Dizendo que o express vai usar o json
+app.use(cors())
 
 // Rota de criação
 app.post('/turmas', async (req, res) => {
