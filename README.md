@@ -40,7 +40,10 @@ Interface para o banco de dados: `npx prisma studio`
 
 URL: `http://localhost:3000/turmas`
 
-# Usando métodos HTTP
+# Front-end do projeto
+Disponível no link: [Front-end](https://github.com/Chris-Mathias/missao_02_react)
+
+# Usando os métodos HTTP
 
 ## POST: Adicionar uma nova turma
 
