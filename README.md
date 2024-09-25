@@ -1,10 +1,10 @@
 # Instalando as dependências
 
-1. Instalar o Node.js e o npm:
-`sudo apt install nodejs npm`
-
-2. Criar uma pasta para o projeto:
+1. Criar uma pasta para o projeto:
 `mkdir classroom-backend` `cd classroom-backend`
+
+2. Instalar o Node.js e o npm:
+`sudo apt install nodejs npm`
 
 3. Inicializar o projeto respondendo tudo com sim:
 `npm init -y`
@@ -27,15 +27,13 @@
 8. No arquivo ".env" que for gerado, coloque a URL do banco de dados:<p>
 `DATABASE_URL="mongodb+srv://USUÁRIO:SENHA_DO_BANCO@class.suw3x.mongodb.net/NOME_DO_BANCO?retryWrites=true&w=majority&appName=Class"`
 
-## Se alterar os esquemas do banco...
-
-Execute para sincronizar os esquemas do prisma para o banco de dados:
+9. Execute para sincronizar os esquemas do prisma para o banco de dados:
 `npx prisma db push`
 
-Execute para importar o cliente Prisma:
+10. Execute para importar o cliente Prisma:
 `npx prisma generate`
 
-## Rodar o banco de dados
+## Rodar o back-end
 Executar o servidor: `node server.js`
 
 Interface para o banco de dados: `npx prisma studio`
@@ -46,7 +44,7 @@ URL: `http://localhost:3000/turmas`
 
 ## POST: Adicionar uma nova turma
 
-Envie a requisição POST para a URL com uma nova turma em JSON.<p>
+Envie a requisição POST para a URL com uma nova turma em JSON no corpo.<p>
 Exemplo:<p>
 POST->`http://localhost:3000/turmas/`<p>
 JSON no body =
