@@ -13,11 +13,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Turmas {
-  id       String   @id @default(auto()) @map("_id") @db.ObjectId
-  title    String
-  subtitle String
-  teacher  String
-  pfp      String
-  bg       String
+model tarefas {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  tarefa     String
+  prioridade String
 }
